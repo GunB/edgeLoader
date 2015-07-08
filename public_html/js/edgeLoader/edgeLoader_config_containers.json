@@ -1,0 +1,12 @@
+{
+    "O_0": {
+        "type": "html",
+        "selector": "#base_container",
+        "default_load": "C_1"
+    },
+    "C_1" : {
+        "type" : "edge",
+        "id" : "Prueba",
+        "class" : "EDGE-2146903"
+    }
+}
