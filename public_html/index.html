@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link href="css/plantilla.css" rel="stylesheet" type="text/css"/>
         <script src="edge/edge_includes/edge.5.0.1.min.js" type="text/javascript"></script>
+        <script src="edge/Prueba_edge.js" type="text/javascript"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -22,7 +23,7 @@
         <![endif]-->
 
         <div id="base_container">
-            AAA
+            
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
@@ -32,5 +33,10 @@
         <script src="js/utility.js" type="text/javascript"></script>
         <script src="js/main.js"></script>
         <script src="js/edgeLoader/edgeLoader.js" type="text/javascript"></script>
+        <script>
+            $.when($.getJSON("js/edgeLoader/edgeLoader_config_containers.json")).done(function (containers) {
+                EdgeLoadder.load_containers(containers).INIT();
+            });
+        </script>
     </body>
 </html>

@@ -1,8 +1,10 @@
 {
     "O_0": {
         "type": "html",
-        "selector": "#base_container",
-        "default_load": "C_1"
+        "selector_load": "#base_container",
+        "default_load": "C_1",
+        "dir" : "index.html",
+        "root_node" : "body"
     },
     "C_1" : {
         "type" : "edge",
